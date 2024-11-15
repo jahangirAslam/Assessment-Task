@@ -11,8 +11,8 @@ const DynamicForm = () => {
         type: 'text',
         placeholder: '',
         buttonText: '',
-        backgroundColor: '', // Default color for button background
-        textColor: '', // Default color for button text
+        backgroundColor: '', 
+        textColor: '', 
         margin: '0px',
         padding: '0px',
         xAxis: '0px',
@@ -69,7 +69,6 @@ const DynamicForm = () => {
                     <MenuItem value="button">Button</MenuItem>
                 </TextField>
 
-                {/* Button Text or Placeholder */}
                 {newElement.type === 'button' ? (
                     <TextField
                         label="Button Text"
@@ -201,7 +200,6 @@ const DynamicForm = () => {
                     </div>
                 )}
 
-                {/* Display Finalized Form Elements */}
                 {formElements.map((element, index) => (
                     <div
                         key={index}
